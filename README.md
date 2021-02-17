@@ -21,8 +21,19 @@ So we could use this device to monitor the amputees physical behaviours.
 The limitation is that for lower limb amputees, mounting an activity monitor on the participants thigh means we will not be able to also collect non-wear data because the device has no interface with the prosthesis and therefore no way of knowing when it has been removed. Also, because of the method used to mount the activPAL on the thigh, which involves a sticky covering plaster, this can cause skin irritation, which means the participant will be more inclined to remove the device. So instead we thought we should try mounting an accelerometer onto the prosthesis itself and then we can monitor both the physical behaviours of the amputees (while they are wearing the prosthesis) and non-wear time. With the added benefit of having no impact on the wearers comfort. One other bonus is that mounting the device on the prosthesis gives us the opportunity to eventually develop a robust (maybe waterproof) casing that would protect the device from the environment. But we don’t have any plans for this yet. Now we can’t rely on the activPAL’s native algorithm for detecting events because it’s going to miss classify sitting events as standing events because it’s orientation will be the same. So we needed to develop a new method for classifying events from a shank mounted accelerometer and this has been my role in the project to date.
 
 <p align="center">
-  <img width="450" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/problem-description.PNG">
+  <img width="400" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/problem-description.PNG">
 </p>
+
+## The Method
+I used the ActivPal located in the normal thigh mounted location to collect events and considered these events to be true and my validation dataset. Then I used another ActivPal mounted onto the anterioror aspect of my shank which is the same location we plan to mount the activPAL on the prosthesis. Doing so enabled me to collect a full week of data and plenty of examples of the events we want to try and classify and the corresponding raw acceleration data from the shank. And as you can see this data was collected on myself in my flat and I’ve even got washing hanging up in the background to make it look like an authentic home lab. However, the ActivPal defines events without specific durartions and instead, the event classification changes when it detects some sort of transition. Therefore each event could be seconds or minutes long. This is a problem because I might not be able to accurately detect event transitions using the shank data in the same way the activPAL does and therefore I needed to separate out my raw data differently
+
+
+
+
+
+
+
+
 
 ## Summary
 
