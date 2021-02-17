@@ -13,8 +13,9 @@ The aim of the study is to recruit 20 lower limb amputees within Cambodia, give 
 Typically, we monitor physical behaviours using an activity monitor and the ActivPal is a device commonly used for this purpose. For those that don’t know, this is a device that contains an accelerometer which is mounted on the thigh of the user. It uses it’s reference to gravitational acceleration to classify postures such sitting and standing based on thigh orientation and then looks at other acceleration features, like signal frequency, to classify activities like stepping. It does this throughout the measurement period until eventually we build a picture of the wearers physical behaviours which gives a rich dataset to analyse
 So we could use this device to monitor the amputees physical behaviours.
 
-![Test Image 1](https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG)
-
+<p align="center">
+![Test Image 1](https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG | width=100)
+</p>
 
 ## Summary
 
