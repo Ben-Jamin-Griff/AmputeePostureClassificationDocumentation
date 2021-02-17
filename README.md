@@ -14,7 +14,7 @@ Typically, we monitor physical behaviours using an activity monitor and the Acti
 So we could use this device to monitor the amputees physical behaviours.
 
 <p align="center">
-  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG">
+  <img width="400" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG">
 </p>
 
 ## Summary
