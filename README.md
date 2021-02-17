@@ -58,9 +58,29 @@ All of this processing was found in the 2017 paper by Zhu et al who was trying t
 
 `Zhu, J., San-Segundo, R. & Pardo, J.M. Feature extraction for robust physical activity recognition. Hum. Cent. Comput. Inf. Sci. 7, 16 (2017).`
 
-I had an idea of which algorithm I wanted to test first,  a K nearest neighbour. The way the KNN works, is by taking in labelled training data (like this) and simply stores it in memory. Then whenever a new value is presented to the data, it simply looks for K nearest values to itself using simple geometry. The reason I wanted to use this algorithm is because it is simple to interpret, it works well with large labelled datasets and the data did not need to meet any specific distribiution assumptions. However, it works best on data with low dimensions, by that I mean only has a few predictor features 'and I have 136'. So I used a method call linear discriminate analysis to reduce the number of dimensions I have down to 2. This is like principle component analysis but it uses labelled data and tries to increase the variation between the classes at each step. After this process I was left with 2 features to make my predictions, which make it easy to plot and show the separation between classes
+I had an idea of which algorithm I wanted to test first,  a K nearest neighbour. The way the KNN works, is by taking in labelled training data (like this) and simply stores it in memory. Then whenever a new value is presented to the data, it simply looks for K nearest values to itself using simple geometry. The reason I wanted to use this algorithm is because it is simple to interpret, it works well with large labelled datasets and the data did not need to meet any specific distribiution assumptions. However, it works best on data with low dimensions, by that I mean only has a few predictor features `and I have 136`. So I used a method call linear discriminate analysis to reduce the number of dimensions I have down to 2. This is like principle component analysis but it uses labelled data and tries to increase the variation between the classes at each step. After this process I was left with 2 features to make my predictions, which make it easy to plot and show the separation between classes
 
-I was also lucky enough to get out of my flat and visit the team down in ICL in December and I was able to collect a few hours of data on several amputees. So the results include both data collected on myself and data on an amputee from ICL (5 days). 
+I was also lucky enough to get out of my flat and visit the team down in ICL in December and I was able to collect a few hours of data on several amputees. So the results include both data collected on myself and data on an amputee from ICL (5 days).
+
+## The Results
+Let us first look at the predictions made using the shank data, on the left I have all the epochs collected from the shank and I partitioned this data so that 80% of the data was used to train the algorithm and 20% was used for testing. The results and corresponding confusion matrix are displayed. On the right I have `Pure EPOCHs` which is a subset of the data where any EPOCHs that contain overlapping events were removed.
+
+<p align="center">
+  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/method2-description.PNG">
+</p>
+
+I also conducted the same analysis using the raw data from the thigh. This was to validate my methodology as we can assume the data will be far better at seperating out sitting and standing events due to the reference to gravitational acceleration. 
+
+<p align="center">
+  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/method2-description.PNG">
+</p>
+
+One more point I wanted to make about the results is that the 80/20 split probably isn’t the most fair way of testing the algorithm because I’m using data collected on a participant to make predictions about that very same participant, and this isn’t something that would happen when this algorithm meets new data. So I performed a leave one group out cross validation using the participant as the grouping. I wanted to keep both analysis results in because at the moment this method isn’t exactly fair too as I only have 2 participants. Just my data is being used to make predictions on an amputee and vice versa. These results show only a small drop in prediction accuracy using this method. For the shank data its around 3 percentage points both mixed EPOCHs and pure EPOCHs and for the thigh it doesn’t change.
+
+## Future Work
+And this is where I’m currently up to... I have some short datasets from ICL (a few hours) where other amputees were testing out the new ICL knee joint and I want to test the algorithm on these datasets. I also was to compare the results in the context of analysing the physical behaviour data so using the activPAL and my method to see differences in predicted standing time, stepping time and sitting time per day for example. There is also the potential to test different algorithms, I used the KNN but you could use a SVM or neural network and with this you could test using all 136 features or a subset of features without using dimensionality reduction. Also, you could try calculating different features to see if they are better at distinguishing between the sit and stand events which is where the problem lies. You could even use deep learning with something like Tensor Flow to feed in the raw accelerometer data and remove the feature engineering step. Finally, we’re prepping for the main data collection which will be conducted in Cambodia in April.
+
+`Thanks for reading, if you have any questions please get in touch with me via email, which can be found on my profile page.`
 
 <hr>
 
