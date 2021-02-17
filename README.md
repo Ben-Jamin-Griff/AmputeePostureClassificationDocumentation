@@ -46,14 +46,18 @@ There are 2 methods we are going to use as part of this evaluation. The first be
 This is important because it will give us a measure of how much they used their new device and the specific activities they performed while using the device. This can help by not only supporting the feeback we get from the questionnaires but also giving us an objective measure of usage and could be used to identify areas where the design can be improved.
 
 ## Traditional Physcial Behaviour Monitoring Methods
-Typically, we monitor physical behaviours using an activity monitor and the activPal is a device commonly used for this purpose. For those that don’t know, this is a device that contains an accelerometer which is mounted on the thigh of the user. It uses it’s reference to gravitational acceleration to classify postures such sitting and standing based on thigh orientation and then looks at other acceleration features, like signal frequency, to classify activities like stepping. It does this throughout the measurement period until eventually we build a picture of the wearers physical behaviours which gives a rich dataset to analyse. So we could use this device to monitor the amputees physical behaviours.
+Typically, we monitor physical behaviours using an activity monitor and the activPal is a device commonly used for this purpose.
+
+For those that don’t know, this is a device that contains an accelerometer which is mounted on the thigh of the user. It uses it’s reference to gravitational acceleration to classify postures such sitting and standing based on thigh orientation and then looks at other acceleration features, like signal frequency, to classify activities like stepping.
+
+It does this throughout the measurement period until eventually we build a picture of the wearers physical behaviours which gives a rich dataset to analyse. So we could use this device to monitor the amputees physical behaviours.
 
 <p align="center">
   <img width="450" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG">
 </p>
 
 ## The Problem
-The problem is that for lower limb amputees, mounting an activity monitor on the participants thigh means we will not be able to also collect non-wear data because the device has no interface with the prosthesis and therefore no way of knowing when it has been removed. Also, because the method used to mount the activPAL on the thigh, which involves a sticky covering plaster, can cause skin irritation and this means the participant will be more inclined to remove the device. So instead we thought we should try mounting an accelerometer onto the prosthesis itself and then we can monitor both the physical behaviours of the amputees (while they are wearing the prosthesis) and non-wear time. With the added benefit of having no impact on the wearers comfort.
+The problem is that for lower limb amputees, mounting an activity monitor on the participants thigh means we will not be able to also collect non-wear data because the device has no interface with the prosthesis and therefore no way of knowing when it has been removed. Also, because the method used to mount the activPAL on the thigh, which involves a sticky covering plaster, can cause skin irritation, this means the participant will be more inclined to remove the device. So instead we thought we should try mounting an accelerometer onto the prosthesis itself and then we can monitor both the physical behaviours of the amputees (while they are wearing the prosthesis) and non-wear time. With the added benefit of having no impact on the wearers comfort.
 
 Now we can’t rely on the activPAL’s native algorithm for detecting events because it’s going to miss classify sitting events as standing events because it’s orientation will be the same. So we needed to develop a new method for classifying events from a shank mounted accelerometer and this has been my role in the project to date.
 
