@@ -82,7 +82,7 @@ One more point I wanted to make about the results is that the 80/20 split probab
 ## Future Work
 And this is where I’m currently up to... I have some short datasets from ICL (a few hours) where other amputees were testing out the new ICL knee joint and I want to test the algorithm on these datasets. I also was to compare the results in the context of analysing the physical behaviour data so using the activPAL and my method to see differences in predicted standing time, stepping time and sitting time per day for example. There is also the potential to test different algorithms, I used the KNN but you could use a SVM or neural network and with this you could test using all 136 features or a subset of features without using dimensionality reduction. Also, you could try calculating different features to see if they are better at distinguishing between the sit and stand events which is where the problem lies. You could even use deep learning with something like Tensor Flow to feed in the raw accelerometer data and remove the feature engineering step. Finally, we’re prepping for the main data collection which will be conducted in Cambodia in April.
 
-###Thanks for reading, if you have any questions please get in touch with me via email, which can be found on my profile page.
+### Thanks for reading, if you have any questions please get in touch with me via email, which can be found on my profile page.
 
 <hr>
 
