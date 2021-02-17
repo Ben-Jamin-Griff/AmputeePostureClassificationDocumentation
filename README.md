@@ -12,11 +12,6 @@
   - [Future Work](#future-work)
   - [Authors](#authors)
 
-### Partners
-* University of Salford
-* Southampton University
-* Imperial Collage London
-
 ### Technologies
 * MATLAB
 * Python
