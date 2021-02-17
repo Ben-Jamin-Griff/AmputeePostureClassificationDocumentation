@@ -17,6 +17,14 @@
 * Python
   * Pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebook, Scikit-Learn
 * PAL Technologies - ActivPAL
+
+<p align="left">
+ <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
+ <a href="https://github.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github" width="40" height="40"/> </a>
+ <a href="https://www.python.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" width="40" height="40"/> </a>
+ <a href="https://jupyter.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-icon.svg" alt="jupyter" width="40" height="40"/> </a>
+ <a href="https://code.visualstudio.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="vscode" width="40" height="40"/> </a>
+</p>
  
 ## Project Introduction
 The work is part of the Low Cost Through Knee Prosthesis Takeup project, which is an EPSRC funded project with a collaboration effort between Exceed Worldwide, DPO, UOS & ICL (Department of Prosthetics and Orthotics in the Faculty of Prosthetic and Orthotic Engineering at the National Institute of Social Affairs). The main objective of the project is to evaluate the use of a new, low-cost, knee joint design within developing countries. The reason for this project is that vast amount of R&D on both the design and evaluation of P&O devices is concentrated to Europe and North America and therefore devices often inappropriate for use in developing countries. So the P&O research group at ICL have come up with a new knee design with a focus specifically on the application within developing countries. Current low-cost designs have some major limitations such as they can’t be locked in extension, they compromise on aesthetics which could result in social exclusion, and a very low prosthetic knee joint center producing other functional issues. These are all things that the project aims at addressing, while focusing on making the design suitable for manufacture and maintence in developing countries and you can see there a prototype of the design.
