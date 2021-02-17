@@ -95,7 +95,7 @@ So I used a method call linear discriminate analysis to reduce the number of dim
 I was also lucky enough to get out of my flat and visit the team down in ICL in December and I was able to collect a few hours of data on several amputees. So the results include both data collected on myself and data on an amputee from ICL (5 days).
 
 ## The Results
-Let us first look at the predictions made using the shank data, on the left I have all the epochs collected from the shank and I partitioned this data so that 80% of the data was used to train the algorithm and 20% was used for testing. The results and corresponding confusion matrix are displayed. On the right I have `Pure EPOCHs` which is a subset of the data where any EPOCHs that contain overlapping events were removed.
+Let us first look at the predictions made using the shank data, on the left I have all the epochs collected from the shank and I partitioned this data so that 80% of the data was used to train the algorithm and 20% was used for testing. The results and corresponding confusion matrix are displayed. On the right I have **Pure EPOCHs** which is a subset of the data where any EPOCHs that contain overlapping events were removed.
 
 <p align="center">
   <img width="900" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/results-description.PNG">
