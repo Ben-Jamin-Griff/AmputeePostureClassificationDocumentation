@@ -37,6 +37,10 @@ I separated out the data into epochs of 15 seconds in length. Each epoch contain
   <img width="600" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/method2-description.PNG">
 </p>
 
+Before the raw acceleration data had been separated out into epochs it was low pass filtered at a frequency of 10 Hz. This was done to remove any noise or high frequency artifact. Then for each epoch I used the raw acceleration data to create a few additional signals, I combined the acceleration axis to create a vector magnitude signal and differentiated the raw acceleration data to calculate jerk for each axis and again combined these to create a jerk magnitude signal. From these signals, within each epoch I calculated 136 values that were to be my features I would use to make predictions of the events. These features were made up of time domain and frequency domain features
+All of this processing was found in the 2017 paper by Zhu et al who was trying to predict activities using several accelerometers and the features were common among other similar papers.
+
+`Zhu, J., San-Segundo, R. & Pardo, J.M. Feature extraction for robust physical activity recognition. Hum. Cent. Comput. Inf. Sci. 7, 16 (2017).`
 
 
 
