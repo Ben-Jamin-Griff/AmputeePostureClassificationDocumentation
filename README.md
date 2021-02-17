@@ -5,6 +5,11 @@
   - [Project Introduction](#project-introduction)
   - [Why is This Work Import?](#why-is-this-work-import)
   - [Project Objective](#project-objective)
+  - [Traditional Physcial Behaviour Monitoring Methods](#traditional-physcial-behaviour-monitoring-methods)
+  - [The Problem](#the-problem)
+  - [The Method](#the-method)
+  - [The Results](#the-results)
+  - [Future Work](#future-work)
   - [Authors](#authors)
 
 ### Partners
