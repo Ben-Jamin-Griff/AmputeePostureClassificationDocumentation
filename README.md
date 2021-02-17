@@ -66,13 +66,13 @@ I was also lucky enough to get out of my flat and visit the team down in ICL in 
 Let us first look at the predictions made using the shank data, on the left I have all the epochs collected from the shank and I partitioned this data so that 80% of the data was used to train the algorithm and 20% was used for testing. The results and corresponding confusion matrix are displayed. On the right I have `Pure EPOCHs` which is a subset of the data where any EPOCHs that contain overlapping events were removed.
 
 <p align="center">
-  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/method2-description.PNG">
+  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/results-description.PNG">
 </p>
 
 I also conducted the same analysis using the raw data from the thigh. This was to validate my methodology as we can assume the data will be far better at seperating out sitting and standing events due to the reference to gravitational acceleration. 
 
 <p align="center">
-  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/method2-description.PNG">
+  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/results2-description.PNG">
 </p>
 
 One more point I wanted to make about the results is that the 80/20 split probably isn’t the most fair way of testing the algorithm because I’m using data collected on a participant to make predictions about that very same participant, and this isn’t something that would happen when this algorithm meets new data. So I performed a leave one group out cross validation using the participant as the grouping. I wanted to keep both analysis results in because at the moment this method isn’t exactly fair too as I only have 2 participants. Just my data is being used to make predictions on an amputee and vice versa. These results show only a small drop in prediction accuracy using this method. For the shank data its around 3 percentage points both mixed EPOCHs and pure EPOCHs and for the thigh it doesn’t change.
