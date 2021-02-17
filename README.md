@@ -3,7 +3,7 @@
 ## Summary
 
   - [Project Introduction](#project-introduction)
-  - [Why is This Work Import?](#why-is-this-work-import?)
+  - [Why is This Work Import?](#why-is-this-work-import)
   - [Project Objective](#project-objective)
   - [Authors](#authors)
 
