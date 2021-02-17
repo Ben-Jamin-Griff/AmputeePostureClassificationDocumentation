@@ -34,7 +34,7 @@ I used the ActivPal located in the normal thigh mounted location to collect even
 I separated out the data into epochs of 15 seconds in length. Each epoch contained the an event code that corresponded to the event detected by the thigh mounted ActivPal and also contained the corresponded raw data from the shank mounted activPAL and the thigh mounted activPAL. The reasons I also collected the raw thigh data was to perform some checks on the processing which I’ll explain in a moment The 15 epoch was moved along the data in 5 second intervals to create and overlap in the data collected. This was done to increase the amount of unique epochs for creating the algorithm. If the window spanned multiple activities, the event code was assigned based on the activity with the longest duration in that window. This method generated up to 17280 epochs per day but then a lot of these were removed if they were not spanning either a sitting, standing or stepping event. For example, sleeping.
 
 <p align="center">
-  <img width="500" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/method2-description.PNG">
+  <img width="600" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/method2-description.PNG">
 </p>
 
 
