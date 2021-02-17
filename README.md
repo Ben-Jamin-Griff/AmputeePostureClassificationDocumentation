@@ -14,7 +14,14 @@ Typically, we monitor physical behaviours using an activity monitor and the Acti
 So we could use this device to monitor the amputees physical behaviours.
 
 <p align="center">
-  <img width="400" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG">
+  <img width="450" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG">
+</p>
+
+## The Problem
+The limitation is that for lower limb amputees, mounting an activity monitor on the participants thigh means we will not be able to also collect non-wear data because the device has no interface with the prosthesis and therefore no way of knowing when it has been removed. Also, because of the method used to mount the activPAL on the thigh, which involves a sticky covering plaster, this can cause skin irritation, which means the participant will be more inclined to remove the device. So instead we thought we should try mounting an accelerometer onto the prosthesis itself and then we can monitor both the physical behaviours of the amputees (while they are wearing the prosthesis) and non-wear time. With the added benefit of having no impact on the wearers comfort. One other bonus is that mounting the device on the prosthesis gives us the opportunity to eventually develop a robust (maybe waterproof) casing that would protect the device from the environment. But we don’t have any plans for this yet. Now we can’t rely on the activPAL’s native algorithm for detecting events because it’s going to miss classify sitting events as standing events because it’s orientation will be the same. So we needed to develop a new method for classifying events from a shank mounted accelerometer and this has been my role in the project to date.
+
+<p align="center">
+  <img width="450" src="https://github.com/Ben-Jamin-Griff/Prosthesis-Physical-Behaviour-Monitoring-Description/blob/main/ap-description.PNG">
 </p>
 
 ## Summary
