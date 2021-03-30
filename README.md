@@ -1,4 +1,4 @@
-<h1 align="center">Prosthesis-Physical-Behaviour-Monitoring-Description</h1>
+<h1 align="center">Amputee Posture Classification Documentation</h1>
 
 ## Summary
 
